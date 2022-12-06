@@ -1,0 +1,32 @@
+table,td,th{
+    border: 1px solid black;
+
+}
+table{
+    width: 100%;
+}
+.daftar{
+    margin-left: 50px;
+    margin-right: 50px;
+   
+}
+.edit{
+    background-color: green;
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+   
+}
+
+.delete{
+    background-color: red;
+   margin-left: 10px;
+   width: 60px;
+   height: 30px;
+   border: none;
+   border-radius: 10px;
+}
+.action{
+    padding: 10px;
+}

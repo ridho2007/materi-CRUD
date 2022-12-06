@@ -1,0 +1,18 @@
+{
+  "daftarBuku": [
+    {
+      "judul": "sikancilll kucilll",
+      "deskripsi": "sikancil yang suka merampok Bank",
+      "pengarang": "akus",
+      "tahunterbit": "2022-11-29",
+      "id": 1
+    },
+    {
+      "judul": "keong mas",
+      "deskripsi": "cerita rakyat sawah",
+      "pengarang": "agus",
+      "tahunterbit": "2022-12-07",
+      "id": 3
+    }
+  ]
+}
