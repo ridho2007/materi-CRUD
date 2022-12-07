@@ -4,6 +4,7 @@ import "./App.css";
 import NavigationBar from "./component/NavigationBar"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./pages/Home"
+import Login from "./pages/Login"
 import {BrowserRouter,Switch,Route} from "react-router-dom";
 import Edit from "./pages/Edit"
 function App() {
@@ -15,15 +16,12 @@ function App() {
       <main>
         <Switch>
           <Route path="/" component={Home} exact/>
+          <Route path="/login" component={Login} exact/>
           {/* ini untuk mengedit akan di ambil id nya */}
           <Route path="/edit/:id" component={Edit} exact/>
         </Switch>
       </main>
       </BrowserRouter>
-     {/* <Form />
-        <Table />  */}
-
-    
      </div>
   );
 }

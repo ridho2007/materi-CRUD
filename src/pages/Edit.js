@@ -2,6 +2,7 @@ import React, {useState,useEffect} from 'react';
 import {Form,InputGroup} from "react-bootstrap"
 import { useHistory,useParams} from "react-router-dom";
 import axios from "axios";
+import Swal from 'sweetalert2';
 // import  "../style/pages.css" 
 // metho edit
 function Edit() {
@@ -36,9 +37,20 @@ const submitActionHandler = async (event) =>{
         tahunterbit:tahunterbit,
     })
     .then(()=>{
-        alert("Berhasil mengubah data user ygy");
+        Swal.fire({
+            icon: 'success',
+            title: 'berhasil di edit',
+            showConfirmButton: false,
+            timer: 1500
+          })
         history.push("/");
-        window.location.reload();
+        
+            
+             
+                setTimeout(() => {
+                  window.location.reload();
+                }, 2000);
+             
     })
     .catch((eror)=>{
         alert("terjadi kesalahan:" + eror);
@@ -101,9 +113,10 @@ const submitActionHandler = async (event) =>{
                 </div>
                 </div>
                 <div className="d-flex justify-content-end align-items-center mt-2">
-                    <button className='buton btn' type="submit">
+                    <button variant="warning" className='buton btn' type="submit">
                         Save
                     </button>
+                 
                 </div>
             </Form>
         </div>

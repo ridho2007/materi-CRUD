@@ -1,165 +1,18 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "username": "aku",
+      "password": "123"
+    }
+  ],
   "daftarBuku": [
     {
-      "judul": "sikancilll kucilll",
-      "deskripsi": "sikancil yang suka merampok Bank",
-      "pengarang": "akus",
-      "tahunterbit": "2022-11-29",
+      "judul": "aqd",
+      "deskripsi": "efd",
+      "pengarang": "dewd",
+      "tahunterbit": "2022-12-09",
       "id": 1
-    },
-    {
-      "judul": "keong mas",
-      "deskripsi": "cerita rakyat sawah",
-      "pengarang": "agus",
-      "tahunterbit": "2022-12-07",
-      "id": 3
-    },
-    {
-      "judul": "a",
-      "deskripsi": "af",
-      "pengarang": "ad",
-      "tahunterbit": "2022-12-01",
-      "id": 4
-    },
-    {
-      "judul": "dgnhg",
-      "deskripsi": "hgfdh",
-      "pengarang": "dhd",
-      "tahunterbit": "2022-12-13",
-      "id": 5
-    },
-    {
-      "judul": "sdaf",
-      "deskripsi": "dsf",
-      "pengarang": "af",
-      "tahunterbit": "2022-12-03",
-      "id": 6
-    },
-    {
-      "judul": "sdaf",
-      "deskripsi": "dsf",
-      "pengarang": "af",
-      "tahunterbit": "2022-12-03",
-      "id": 7
-    },
-    {
-      "judul": "sdaf",
-      "deskripsi": "dsf",
-      "pengarang": "af",
-      "tahunterbit": "2022-12-03",
-      "id": 8
-    },
-    {
-      "judul": "sg",
-      "deskripsi": "gsg",
-      "pengarang": "sg",
-      "tahunterbit": "2022-12-08",
-      "id": 9
-    },
-    {
-      "judul": "as",
-      "deskripsi": "sas",
-      "pengarang": "as",
-      "tahunterbit": "2022-12-08",
-      "id": 10
-    },
-    {
-      "judul": "as",
-      "deskripsi": "sas",
-      "pengarang": "as",
-      "tahunterbit": "2022-12-08",
-      "id": 11
-    },
-    {
-      "judul": "p",
-      "deskripsi": "p",
-      "pengarang": "pp",
-      "tahunterbit": "2022-12-08",
-      "id": 12
-    },
-    {
-      "judul": "cv",
-      "deskripsi": "zv",
-      "pengarang": "vz",
-      "tahunterbit": "2022-12-09",
-      "id": 13
-    },
-    {
-      "judul": "cv",
-      "deskripsi": "zv",
-      "pengarang": "vz",
-      "tahunterbit": "2022-12-09",
-      "id": 14
-    },
-    {
-      "judul": "cv",
-      "deskripsi": "zv",
-      "pengarang": "vz",
-      "tahunterbit": "2022-12-09",
-      "id": 15
-    },
-    {
-      "judul": "cv",
-      "deskripsi": "zv",
-      "pengarang": "vz",
-      "tahunterbit": "2022-12-09",
-      "id": 16
-    },
-    {
-      "judul": "cv",
-      "deskripsi": "zv",
-      "pengarang": "vz",
-      "tahunterbit": "2022-12-09",
-      "id": 17
-    },
-    {
-      "judul": "cv",
-      "deskripsi": "zv",
-      "pengarang": "vz",
-      "tahunterbit": "2022-12-09",
-      "id": 18
-    },
-    {
-      "judul": "cv",
-      "deskripsi": "zv",
-      "pengarang": "vz",
-      "tahunterbit": "2022-12-09",
-      "id": 19
-    },
-    {
-      "judul": "cv",
-      "deskripsi": "zv",
-      "pengarang": "vz",
-      "tahunterbit": "2022-12-09",
-      "id": 20
-    },
-    {
-      "judul": "cv",
-      "deskripsi": "zv",
-      "pengarang": "vz",
-      "tahunterbit": "2022-12-09",
-      "id": 21
-    },
-    {
-      "judul": "cv",
-      "deskripsi": "zv",
-      "pengarang": "vz",
-      "tahunterbit": "2022-12-09",
-      "id": 22
-    },
-    {
-      "judul": "frh",
-      "deskripsi": "dgd",
-      "pengarang": "sg",
-      "tahunterbit": "2022-12-16",
-      "id": 23
-    },
-    {
-      "judul": "gsg",
-      "deskripsi": "dsg",
-      "pengarang": "gsg",
-      "tahunterbit": "2022-12-09",
-      "id": 24
     }
   ]
 }
