@@ -5,9 +5,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import swal from 'sweetalert';
 import { Modal, Form, InputGroup } from "react-bootstrap";
-// import "../style/navbar.css"
+
 
 function NavigationBar() {
   const [show, setShow] = useState(false);
@@ -15,13 +15,14 @@ function NavigationBar() {
   const [deskripsi, setDeskripsi] = useState("");
   const [pengarang, setPengarang] = useState("");
   const [tahunterbit, setTahunterbit] = useState("");
-
+// ini untuk tombol
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+// ini untuk menthod memabahkan
 
   const addUser = async (e) => {
     e.preventDefault();
-
+   
     const data = {
       judul: judul,
       deskripsi: deskripsi,
@@ -29,15 +30,18 @@ function NavigationBar() {
       tahunterbit: tahunterbit,
     };
     await axios
+   
       .post("http://localhost:8000/daftarBuku", data)
+     
       .then(() => {
+         swal ( " Ini judulnya! " , " ...dan berhasil! " );
         window.location.reload();
       })
       .catch((eror) => {
         alert("terjadi kesalahan" + eror);
       });
   };
-
+// end
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-light">
@@ -63,20 +67,16 @@ function NavigationBar() {
                   Home
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Tambah buku
-                </a>
-              </li>
+            
+              
+              {/* ini untuk tombol add */}
               <li className="nav-item dropdown">
                 <button className="btn" onClick={handleShow}>
                   tambah buku
                 </button>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Action
-                    </a>
+                    
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
@@ -133,10 +133,12 @@ function NavigationBar() {
               <Form.Label>Pengarang</Form.Label>
               <Form.Control type="text" placeholder="Pengarang" onChange={(e) => setPengarang(e.target.value)}required />
             </Form.Group>
+            {/* jika di close maka akan keluar */}
             <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" type="submit" >
+          {/* jika di save maka akan menyimpan */}
+          <Button variant="primary" type="submit"  >
             Save Changes
           </Button>
           </Form>

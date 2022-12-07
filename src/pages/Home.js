@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 // import "../style/page.css";
 function Home() {
   const [buku, setBuku] = useState([]);
-
+// ini untuk memunculkan table db
   const getAll = () => {
     axios
       .get("http://localhost:8000/daftarBuku")
@@ -18,7 +18,7 @@ function Home() {
   useEffect(() => {
     getAll();
   }, []);
-
+// method mendelet
   const deleteUser = async (id) => {
     axios.delete("http://localhost:8000/daftarBuku/" + id);
     alert("user berhasil di hapus ges.");
@@ -54,6 +54,7 @@ function Home() {
                   >
                     Hapus
                   </Button>
+                  {/* tombol ini akan mengarah ke page lain */}
                   <a href={"/edit/" + book.id}>
                     <Button variant="warning" className="mx-1">
                       ubah

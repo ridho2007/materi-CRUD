@@ -15,6 +15,7 @@ function App() {
       <main>
         <Switch>
           <Route path="/" component={Home} exact/>
+          {/* ini untuk mengedit akan di ambil id nya */}
           <Route path="/edit/:id" component={Edit} exact/>
         </Switch>
       </main>

@@ -3,14 +3,14 @@ import {Form,InputGroup} from "react-bootstrap"
 import { useHistory,useParams} from "react-router-dom";
 import axios from "axios";
 // import  "../style/pages.css" 
-
+// metho edit
 function Edit() {
     const param = useParams();
     const [judul,setJudul] = useState("");
     const [deskripsi,setDeskripsi] = useState("");
     const [pengarang,setPengarang] = useState("");
     const [tahunterbit,setTahunterbit] = useState("");
-
+// ini untuk menampilkan yang mau di edit
 const history = useHistory();
 useEffect(() =>{
     axios
@@ -26,7 +26,7 @@ useEffect(() =>{
         alert("terjadi kesalahan sir!" + eror);
     });
 },[]);
-
+// ini untuk mengeditnya
 const submitActionHandler = async (event) =>{
     event.preventDefault();
     await axios.put("http://localhost:8000/daftarBuku/" +param.id,{
